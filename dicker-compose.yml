@@ -1,0 +1,50 @@
+version: '3'
+
+# <-- 下記設定を参考にインデントに気をつけながらservicesの内容を書く -->
+# <-- 6~11行目に関しては一旦考えなくて良い -->
+
+# x-common: &common
+#   working_dir: /go/src/microservice
+#   tty: true
+#   expose:
+#       - 8080
+#   command: bash -c "go run main.go"
+
+# services:
+#   nginx-proxy:
+#     image: jwilder/nginx-proxy:alpine
+#     ports:
+#       - "80:80"
+#     volumes:
+#       - /var/run/docker.sock:/tmp/docker.sock:ro
+#       - ./conf:/etc/nginx/vhost.d
+#     depends_on:
+#       - service-a
+#       - service-b
+#       - service-c
+
+#   termination:
+#     image: containous/whoami
+#     environment:
+#       - VIRTUAL_HOST=localhost
+
+#   service-a:
+#     <<: *common
+#     build:
+#       context: "./service-a"
+#     volumes:
+#       - ./service-a:/go/src/microservice
+
+#   service-b:
+#     <<: *common
+#     build:
+#       context: "./service-b"
+#     volumes:
+#       - ./service-b:/go/src/microservice
+
+#   service-c:
+#     <<: *common
+#     build:
+#       context: "./service-c"
+#     volumes:
+#       - ./service-c:/go/src/microservice
