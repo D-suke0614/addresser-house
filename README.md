@@ -18,4 +18,9 @@ web-app (Front)：
 - React 1.1.1
   - matelial UI
 
+### BacK
+- Java 16
+  - Spring boot2.7
+  - Soring Framework5.3
+
 ## Developer
