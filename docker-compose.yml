@@ -10,23 +10,28 @@ version: '3'
 #       - 8080
 #   command: bash -c "go run main.go"
 
-
 services:
   web-app:
     # ./web-appにindex.htmlを作るとコンテナ内の/usr/src/web-appにもindex.htmlが作られる
     # voluemsについての参考サイト https://www.nyamucoro.com/entry/2018/08/13/222617
     volumes:
-      - ./web-app:/usr/src/web-app
+      - .:/usr/src/
+      - /usr/src/web-app/node_modules
     # Dockerfileの実行
     build:
       # contextをルートディレクトリにし、Dockerfileを参照させる
       context: .
-      dockerfile: ./web-app/Dockerfile
+      dockerfile: Dockerfile_web-app
+    container_name: web-app
+    # 実行させたいコマンド
+    # command: sh -c 'cd web-app && yarn start'
     # コンテナを起動させ続けるか
     tty: true
     # コンテナ側とホスト側のポートの設定
     ports:
-      - 8080:8080
+      - 3000:3000
+      # storybook用のポート
+      # - 6006:6006
 
 # services:
 #   nginx-proxy:
