@@ -32,6 +32,39 @@ services:
       - 3000:3000
       # storybook用のポート
       # - 6006:6006
+      
+  authservice:
+    image: authservice
+    container_name: authservice
+    build:
+      context: ./authservice
+      dockerfile: Dockerfile
+    ports:
+      - "7001:7001"
+    # depends_on:
+    #   - db
+    environment:
+      - CONTAINER_NAME=authservice
+      - PORT=7001
+      # - DB_USER=${DB_USER:-postgres}
+      # - DB_PASSWD=${DB_PASSWORD:-postgres}
+      # - DB_URL=${DB_URL:-r2dbc:postgresql://db:5432/db}
+    networks:
+      - default
+
+  apartowner:
+    image: apartowner
+    container_name: apartowner
+    build:
+      context: ./apartowner
+      dockerfile: Dockerfile
+    ports:
+      - "7002:7002"
+    environment:
+      - CONTAINER_NAME=apartowner
+      - PORT=7002
+    networks:
+      - default
 
 # services:
 #   nginx-proxy:
