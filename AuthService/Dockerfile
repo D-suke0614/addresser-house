@@ -1,4 +1,6 @@
-FROM apache/beam_java17_sdk
-ADD target/authservice.jar authservice.jar
+FROM maven:3.8.3-openjdk-17
+WORKDIR /usr/src/authservice
+COPY ../AuthService .
+RUN mvn package
 EXPOSE 7001
-ENTRYPOINT ["java", "-jar", "authservice.jar"]
+ENTRYPOINT ["java", "-jar", "target/authservice.jar"]

@@ -1,4 +1,4 @@
-package addresser.AuthService;
+package addresser.AuthServicese;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

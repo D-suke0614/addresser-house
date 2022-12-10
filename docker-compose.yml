@@ -37,8 +37,8 @@ services:
     image: authservice
     container_name: authservice
     build:
-      context: ./authservice
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./AuthService/Dockerfile
     ports:
       - "7001:7001"
     # depends_on:
@@ -56,8 +56,8 @@ services:
     image: apartowner
     container_name: apartowner
     build:
-      context: ./apartowner
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./apartowner/Dockerfile
     ports:
       - "7002:7002"
     environment:

@@ -19,20 +19,19 @@ window.addEventListener('DOMContentLoaded', () => {
     const ID = document.querySelector('input[name="ID"]');
     const name = document.querySelector('input[name="name"]');
 
-
     // (4) FormDataオブジェクトにデータをセット
     fd.append('ID', ID.value);
     fd.append('name', name.value);
 
-
     // (5) フォームの入力値を送信
-    fetch( 'WebSocket', {
+    fetch( 'http://localhost:7001/LoginSuccess', {
       method: 'POST',
-      body: fd
+      body: JSON.stringify({fd})
     })
-    .then(response => response.json())
     .then(data => {
       console.log(data);
+//      document.getElementById('accesstoken').textContent = data;
+
     })
     .catch((error) => {
       console.error(error);
