@@ -11,7 +11,7 @@ $ docker-compose up -d
 
 # Access
 ```
-web-app (Front)：
+local:
 http://localhost:3000
 ```
 
