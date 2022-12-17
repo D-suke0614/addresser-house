@@ -1,4 +1,6 @@
-FROM apache/beam_java17_sdk
-ADD target/apartowner.jar apartowner.jar
+FROM maven:3.8.3-openjdk-17
+WORKDIR /usr/src/apartowner
+COPY ../ApartOwner .
+RUN mvn package
 EXPOSE 7002
-ENTRYPOINT ["java", "-jar", "apartowner.jar"]
+ENTRYPOINT ["java", "-jar", "target/apartowner.jar"]
