@@ -1,0 +1,2 @@
+# .node_modules以下のファイルはgit管理下に置かない
+./web-app/node_modules/
