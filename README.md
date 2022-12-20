@@ -19,14 +19,16 @@ http://localhost:3000
 ### Front
 - React
   - TypeScript
-  - material ui
+  - materialui
 
 ### BacK
 - Java 16
   - Spring boot2.7
   - Soring Framework5.3
 
-## Developer
- - Yugawa Shota
+## Front Developer
  - Daisuke Kida
+
+## API Developer
+ - Yugawa Shota
  - Hama Yuki
