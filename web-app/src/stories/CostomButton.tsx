@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '@mui/material/Button'
+import './CustomButton.css'
 
 interface CustomeButtonProps {
   /**
@@ -24,14 +25,21 @@ interface CustomeButtonProps {
   onClick?: () => void
 }
 
-export const CustomeButton = ({
+export const CustomButton = ({
   primary = false,
   size = 'medium',
   backgroundColor,
   label,
   ...props
 }: CustomeButtonProps) => {
-  <Button
-  {...props}
-  ></Button>
+  const mode = primary ? 'storybook-custom-button--primary' : 'storybook-custom-button--secondary';
+  return (
+    <Button
+      className={['storybook-custom-button', `storybook-custom-button--${size}`, mode].join(' ')}
+      style={{ backgroundColor }}
+      {...props}
+    >
+      {label}
+    </Button>
+  )
 }
