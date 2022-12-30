@@ -31,6 +31,9 @@
       "@pages/*": [
         "components/pages/*"
       ],
+      "@images/*": [
+        "assets/images/*"
+      ]
     },
   },
   "include": [
