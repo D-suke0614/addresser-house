@@ -1,11 +1,12 @@
 import * as React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Login } from './components/pages/Consumer/Login/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="web-app">
+      <Login />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -18,7 +19,7 @@ function App() {
         >
           Addresser House
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
