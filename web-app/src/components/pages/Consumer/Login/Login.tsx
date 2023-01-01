@@ -21,7 +21,7 @@ export const Login = ({
         <div className="select-form">
           <h2>sign in / sing up</h2>
         </div>
-        <div className="sign-in-form">login</div>
+        <div className="sign-in-form">sign in</div>
       </div>
     </div>
   )
