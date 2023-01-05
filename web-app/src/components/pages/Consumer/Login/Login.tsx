@@ -21,7 +21,9 @@ export const Login = ({
         <div className="select-form">
           <h2>sign in / sing up</h2>
         </div>
-        <div className="sign-in-form">sign in</div>
+        <div className="sign-in-form">
+          {/* ここにログインフォーム作成（デザイン見直したい） */}
+        </div>
       </div>
     </div>
   )
