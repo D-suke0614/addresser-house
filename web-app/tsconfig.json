@@ -20,10 +20,21 @@
     "noEmit": true,
     "jsx": "preserve",
     "noImplicitAny": false,
-    // "baseUrl": "./",
-    // "paths": {
-    //   "@/*": ["./src/*"]
-    // },
+    "baseUrl": "./src",
+    "paths": {
+      "@atoms/*": [
+        "components/atoms/*"
+      ],
+      "@molecules/*": [
+        "components/molecules/*"
+      ],
+      "@pages/*": [
+        "components/pages/*"
+      ],
+      "@images/*": [
+        "assets/images/*"
+      ]
+    },
   },
   "include": [
     "src"
