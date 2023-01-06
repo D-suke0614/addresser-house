@@ -22,6 +22,9 @@ export const Login = ({
           <h2>sign in / sing up</h2>
         </div>
         <div className="sign-in-form">
+          <TextFields />
+          <TextFields />
+          <TextButton label={'ログイン'}></TextButton>
           {/* ここにログインフォーム作成（デザイン見直したい） */}
         </div>
       </div>
