@@ -17,7 +17,7 @@ deployed main branch
 - eslint 8.32.0
 - material-ui 5.11.5
 
-## devDependencies
+## DevDependencies
 <p>返り値の方を明示的にするため</p>
 - @typescript-eslint/eslint-plugin ^5.48.2<br>
 <p>使用していないimportが入り込むのを防ぐため</p>
@@ -25,6 +25,7 @@ deployed main branch
 <p>prettier</p>
 - prettier ^2.8.3
 - eslint-config-prettier: ^8.6.0,
+- storybook
 
 ## Usage
 ```
@@ -35,6 +36,9 @@ $ yarn dev
 format & lint
 $ yarn format
 yarn lint --fix
+
+storybook
+$yarn storybook
 ```
 
 ## Author
