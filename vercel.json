@@ -1,11 +1,3 @@
-// {
-//   "$schema": "https://openapi.vercel.sh/vercel.json",
-//   "buildCommand": "yarn build-storybook",
-//   "devCommand": "yarn storybook",
-//   "installCommand": "yarn install",
-//   "framework": null,
-//   "outputDirectory": "./storybook-static"
-// }
 {
   "redirects": [
     {
