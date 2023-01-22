@@ -1,3 +1,49 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "unused-imports"
+  ], // unused-imports を追加
+  "rules": {
+    "no-shadow": "error", // https://eslint.org/docs/rules/no-shadow
+    "@typescript-eslint/explicit-function-return-type": "warn", // 返り値の型を明示するためのルール
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "import/order": [ // import の順番を決めます
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        // pathGroups: [
+        //   {
+        //     pattern: "@alias/**",
+        //     group: "parent",
+        //     position: "before",
+        //   },
+        // ],
+        "alphabetize": {
+          "order": "asc"
+        },
+        "newlines-between": "always"
+      }
+    ]
+  }
 }
