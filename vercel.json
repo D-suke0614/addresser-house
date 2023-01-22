@@ -1,8 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/_storybook",
-      "destination": "/_storybook/?path=/story/welcome--to-storybook"
-    }
-  ]
-}
