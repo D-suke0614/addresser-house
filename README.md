@@ -24,8 +24,7 @@ deployed main branch
 - eslint-plugin-unused-imports ^2.0.0<br>
 <p>prettier</p>
 - prettier ^2.8.3
-- eslint-config-prettier: ^8.6.0,
-- storybook
+- eslint-config-prettier: ^8.6.0
 
 ## Usage
 ```
@@ -36,9 +35,6 @@ $ yarn dev
 format & lint
 $ yarn format
 yarn lint --fix
-
-storybook
-$yarn storybook
 ```
 
 ## Author
