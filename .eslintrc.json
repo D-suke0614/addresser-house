@@ -8,6 +8,7 @@
     "unused-imports"
   ], // unused-imports を追加
   "rules": {
+    "react/no-unescaped-entities": "off", // アプストロフィを使用してもエラーが出ないように
     "no-shadow": "error", // https://eslint.org/docs/rules/no-shadow
     "@typescript-eslint/explicit-function-return-type": "warn", // 返り値の型を明示するためのルール
     "unused-imports/no-unused-imports": "error",
