@@ -1,15 +1,13 @@
 # This is Addresser-House
 
 ## Demo
-[Addresser House](https://addresser-house.vercel.app/)
-
-deployed main branch
-
+[Addresser House](https://addresser-house.vercel.app/)<br />
+You can check in this demo site is the main branch.
 ## Requirement
 - Node.js 14.6.0 or newer
 - macOS, Windows, Linux
 
-<p class="warn">We were tested on macOS only</p>
+<p class="warn">We have only tested it on macOS.</p>
 
 ## Framework and Libraries
 - Next.js 13.1.4
@@ -34,7 +32,7 @@ $ yarn dev
 
 format & lint
 $ yarn format
-yarn lint --fix
+$ yarn lint --fix
 ```
 
 ## Author
