@@ -33,6 +33,9 @@ $ yarn dev
 format & lint
 $ yarn format
 $ yarn lint --fix
+
+storybook
+$ yarn storybook
 ```
 
 ## Author
