@@ -15,6 +15,40 @@ You can check in this demo site is the main branch.
 - eslint 8.32.0
 - material-ui 5.11.5
 
+## Directories
+```
+src/
+├─ common/
+├─ components/
+│  ├─ features/
+│  ├─ ui/
+│  │  ├─ button/
+│  │  │  ├─ Button.tsx
+│  │  ├─ index.ts
+├─ pages/
+├─ lib/
+```
+### pages
+url単位で分けられたページ群<br/>
+featuresで作られた機能を呼び出し、１つのページとする<br>
+あるボタンを押したら、urlが代わり別のページが表示されるなどの制御はここで行う
+
+### common
+プロジェクト内の様々な場所で呼び出される変数や肩などをここで定義しておく
+
+### lib
+ライブラリの初期設定などが必要な場合は、このディレクトリ内で行う
+
+### features
+ページの中に表示される機能群<br/>
+ログイン機能やシステム設定、お知らせ投稿など
+
+### ui
+MUIのコンポーネントをラップし、独自のスタイルを当てたコンポーネント群<br/>
+index.tsxでuiは以下にあるコンポーネントを全て一気にexportする<br>
+
+[ディレクトリ構成で困ったときはここを参照](https://tech-blog.rakus.co.jp/entry/20230208/frontend)
+
 ## DevDependencies
 <p>返り値の方を明示的にするため</p>
 - @typescript-eslint/eslint-plugin ^5.48.2<br>
