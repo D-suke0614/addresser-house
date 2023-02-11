@@ -40,19 +40,19 @@ $ yarn storybook
 
 ## Gitmoji
 ### 機能実装系
-- ✨ :sparkles: Introduce new features
+- ✨ sparkles: Introduce new features
   - 新規機能の実装時
-- ⚡️ :zap: Improve performance
+- ⚡️ zap: Improve performance
   - 既存の機能に、別機能を追加したとき
-- 🔥 :fire: Remove code or files
+- 🔥 fire: Remove code or files
   - 機能を削除したとき
-- ・🚧 :construction: Work in progress.
+- 🚧 construction: Work in progress.
   - WIP、作業途中でcommitするとき
 
 ### バグ修正系
-- 🐛 :bug: Fix a bug
+- 🐛 bug: Fix a bug
   - バグ修正したとき
-- 🩹 :adhesive_bandage: Simple fix for a non-critical issue
+- 🩹 adhesive_bandage: Simple fix for a non-critical issue
   - 一瞬で修正できるような、軽微な修正をしたとき
 
 [そのほかのGitmoji](https://ascii.jp/elem/000/004/081/4081225/)
