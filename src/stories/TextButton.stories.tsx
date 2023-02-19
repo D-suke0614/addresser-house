@@ -1,6 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-// import { TextButton } from '@/components/ui/button/TextButton';
 import { TextButton } from '../components/ui/button/TextButton'
 
 export default {
